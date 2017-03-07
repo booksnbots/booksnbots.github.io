@@ -43,6 +43,7 @@ h2 {
   font-weight: bold;
 }
 
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -59,6 +60,14 @@ Modules - reusable parts of our design
   content: '';
   display: table;
   clear: both;
+}
+
+.img-medium-circle {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
 }
 
 /* -------------------------------- 
