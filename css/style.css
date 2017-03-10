@@ -70,6 +70,12 @@ Modules - reusable parts of our design
   top: 50%;
 }
 
+div#movie {
+    position: fixed;
+    width: 100%;
+}
+
+
 /* -------------------------------- 
 
 Main components 
