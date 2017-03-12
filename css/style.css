@@ -18,12 +18,12 @@ body {
   font-size: 100%;
   font-family: "Roboto", sans-serif;
   color: #7f8c97;
-  background-color: #e9f0f5;
+  background-color: #E0E5F9;
   background-size: auto, cover;
 }
 
 a {
-  color: #acb7c0;
+  color: #7f8c97;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
@@ -70,12 +70,6 @@ Modules - reusable parts of our design
   top: 50%;
 }
 
-div#movie {
-    position: fixed;
-    width: 100%;
-}
-
-
 /* -------------------------------- 
 
 Main components 
@@ -85,7 +79,7 @@ header {
   height: 100px;
   line-height: 100px;
   text-align: center;
-  background: #A5B4D9;
+  background: #1F5673;
 }
 header h1 {
   color: white;
@@ -101,6 +95,11 @@ header h1 {
     font-size: 48px;
     font-size: 4.0rem;
   }
+}
+
+div#movie {
+    position: fixed;
+    width: 100%;
 }
 
 #cd-timeline {
@@ -176,21 +175,16 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-  background: #D32F2F;
-}
-.cd-timeline-img.cd-movie {
-  background: #1976D2;
-}
 .cd-timeline-img.cd-location {
-  background: #43A047;
+  background: #1F5673;
 }
 .cd-timeline-img.cd-books{
-  background: #634323;
+  background: #DD7181;
 }
 .cd-timeline-img.cd-bots{
   background: #4B5B25;
 }
+
 
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -287,8 +281,8 @@ header h1 {
   color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 1rem;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
@@ -300,18 +294,22 @@ header h1 {
 .cd-timeline-content .cd-read-more {
   float: right;
   padding: .8em 1em;
-  background: #acb7c0;
+  background: #1F5673;
   color: white;
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
+  background-color: #1C4B6F;
 }
 .cd-timeline-content .cd-date {
   float: left;
   padding: .8em 0;
   opacity: .7;
 }
+.cd-timeline-content .photo-carousel {
+  margin: 1em 0;
+}
+
 .cd-timeline-content::before {
   content: '';
   position: absolute;
@@ -333,7 +331,7 @@ header h1 {
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -489,7 +487,7 @@ header h1 {
     -webkit-transform: translateX(100px);
     -moz-transform: translateX(100px);
     -ms-transform: translateX(100px);
-    -o-transform: translateX(100px);
+    -o-transform: translateX(1f00px);
     transform: translateX(100px);
   }
 

@@ -1,10 +1,10 @@
 <!doctype html>
 <!-- 
+  John F. Wu 2017
+
   All credit to CodyHouse 
   https://codyhouse.co/gem/vertical-timeline/
 -->
-
-<!-- Color palette that I want: #4F3C29, #4B5B25, #7B7C67, #9DA4B7, #B6C5EA (roughly brown, green olive/mauve, gray, blue-gray) -->
 
 <html lang="en" class="no-js">
 <link href="https://fonts.googleapis.com/css?family=Roboto|Amatic+SC:700|Alegreya:700" rel="stylesheet" type="text/css">
@@ -12,17 +12,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+    <!-- Slick carousel -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
     
     <title>#booksnbots get married</title>
 </head>
 <body>
     <header>
-        <h1>#booksnbots get married</h1>
+        <a href="https://goo.gl/forms/jkrqXnqUDREI8NHo1"><h1>#booksnbots get married</h1></a>
     </header>
 
     <section id="cd-timeline" class="cd-container">
@@ -32,28 +37,29 @@
         <!-- Priscilla -->
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-books">
-                <img src="img/icon-book.svg" alt="books">
+                <img src="img/cd-icon-book.svg">
             </div>
 
             <div class="cd-timeline-content">
-                <h2>#books</h2>
-                <p>Priscilla likes books.</p>
+                <h2>Priscilla (#books)</h2>
+                <p>Having grown up with Disney fairytales and other literary heroines such as Anne of Green Gables and Hermione Granger, Priscilla was raised to be an independent woman who still trusted that someday her own Prince Charming would come. Passionate for God's creation and humankind, she set on her own adventure fighting injustices in human trafficking, living in the sub-Saharan African continent for global health work, and currently working as a philanthropic grantmaker with the Bristol-Myers Squibb Foundation. </p>
                 <p></p>
-                <img src="img/priscilla.jpg" class="img-medium-circle">
+                <center><img src="img/priscilla.jpg" class="img-medium-circle"></center>
             </div>
         </div>
 
         <!-- John -->
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-bots">
-                <img src="img/icon-bot.svg" alt="bots">
+                <img src="img/cd-icon-bot.svg">
             </div>
 
             <div class="cd-timeline-content">
-                <h2>#bots</h2>
-                <p>John is a robot. beep boop. he likes plants</p>
+                <h2>John (#bots)</h2>
+                <p>John is a Ph.D. student studying astrophysics. Despite his nerdy interests, John has always identified as a hard-core extravert and friend to all. He is wholeheartedly committed to serving his communities in the school, church, and neighboring towns.</p>
+                <p>His moniker, "bots," derives from both his love of botany and his slightly robotic (or un-emotional) temperament.</p>
                 <p></p>
-                <img src="img/odells.jpg" class="img-medium-circle">
+                <center><img src="img/john.jpg" class="img-medium-circle"></center>
             </div>
         </div>
 
@@ -61,8 +67,8 @@
         <!-- PCC/YAGS -->
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-books">
-                <img src="img/icon-book.svg" alt="books">
-            </div> 
+                <img src="img/cd-icon-book.svg">
+            </div>
 
             <div class="cd-timeline-content">
                 <h2>Point Community Church</h2>
@@ -74,83 +80,121 @@
 
         <!-- Emails + first date -->
         <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
-                <img src="img/cd-icon-email.svg" alt="Email">
-            </div> 
+            <div class="cd-timeline-img cd-bots">
+                <img src="img/cd-icon-bot.svg">
+            </div>
 
             <div class="cd-timeline-content">
                 <h2>The beginnings of #booksnbots</h2>
-                <p>A summer road trip to Chicago would turn Priscilla and John's trajectory. The late night conversations sparked on that car ride would continue through emails as modern-day love letters while Priscilla was out of town for her work trips. When she returned, they had their first date at a bookstore, To Be Continued... It took John less than a week for him to ask Priscilla out and the rest is history!</p>
-                <p></p>
-                <!-- 
-                   screenshot of email thread, or maybe of the paper flowers
-                <img src="img/odells.jpg">
-                -->
+                <p>A summer road trip to Chicago would forever intertwine Priscilla's and John's trajectories. Late night conversations sparked on that car ride would continue through modern-day love letters (aka emails) in spite of Priscilla's frequent work trips. When she returned, they enjoyed their first date at a bookstore, To Be Continued... It took them less than a week to make it official, and the rest is history!</p>
                 <span class="cd-date">September 23, 2015</span>
             </div> 
         </div> 
 
         <!-- Meeting the parents -->
         <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
-                <img src="img/cd-icon-picture.svg" alt="Picture">
-            </div> 
-
-            <div class="cd-timeline-content">
-                <h2>Meeting the parents</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-                <span class="cd-date">March 17, 2016</span>
-            </div> 
-        </div> 
-
-        <!-- Engagement -->
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
-                <img src="img/cd-icon-picture.svg" alt="Picture">
+            <div class="cd-timeline-img cd-books">
+                <img src="img/cd-icon-book.svg">
             </div>
 
             <div class="cd-timeline-content">
-                <h2>Engagement</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-                <span class="cd-date">July 24, 2016</span>
+                <h2>Meeting the parents</h2>
+                <p>Priscilla had the opportunity of having monthly dinners and spending her first Christmas with John's family, steadily getting to know her future in-laws. John was initially intimidated to meet Priscilla's family in Texas during his spring break, especially because: (1) John was meeting the Ko family for the first time, (2) Priscilla's dad was a pre-marital counselor, and (3) John crashed the Ko's family car within 24 hours of arrival! However, Priscilla's family still welcomed him and gave their blessing for John to marry their daughter.</p>
+                <p></p>
+                <img src="img/parents.jpg">
+                <span class="cd-date">Fall - Winter 2015</span>
+            </div> 
+        </div> 
+
+        <!-- Four seasons of dating -->
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-bots">
+                <img src="img/cd-icon-bot.svg">
+            </div>
+
+            <div class="cd-timeline-content">
+                <h2>Four seasons of dating</h2>
+                <div class="photo-carousel">
+                    <div>
+                        <img src="img/fall.jpg">
+                        <center>
+                            <p>Fall 2015 <br>
+                            Bear Mountain, NY </p>
+                        </center>
+                    </div>
+                    <div>
+                        <img src="img/winter.jpg">
+                        <center>
+                            <p>Winter 2015<br>
+                            New Year's Eve in New York City</p>
+                        </center>
+                    </div>
+                    <div>
+                        <img src="img/spring.jpg">
+                        <center>
+                            <p>Spring 2016<br>
+                            The O'Dell's Wedding</p>
+                        </center>
+                    </div>
+                    <div>
+                        <img src="img/summer.jpg">
+                        <center>
+                            <p>Summer 2016<br>
+                            Rehoboth Beach, DE</p>
+                        </center>
+                    </div>
+                </div>
+
             </div> 
         </div> 
 
         <!-- Finally married! -->
         <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-movie">
-                <img src="img/cd-icon-movie.svg" alt="Movie">
-            </div> 
+            <div class="cd-timeline-img cd-books">
+                <img src="img/cd-icon-book.svg">
+            </div>
 
             <div class="cd-timeline-content">
                 <h2>Married!</h2>
-                <p>Deliberately simple, Priscilla and John chose to enter their marital union in an unconventional manner. The ceremony was held in John's living room with a few friends gathered and a video stream set up for friends and family to tune in online. They were incredibly blessed by their church community who came together with flowers, food, and fellowship to witness their matrimony. Please enjoy our wedding video below!</p>
+                <p>Priscilla and John chose to enter their marital union in an unconventional but deliberately simple fashion. The ceremony was held in John's living room with a few friends gathered and a video stream set up for friends and family to tune in online. They were incredibly blessed by their church community who came together with flowers, food, and fellowship to witness their matrimony.</p>
+                <p>You can watch a video made by one of our friends:</p>
                 <div class="movie">
-                <!-- 
-                  TODO: force open in new window
-                -->
+                <!-- TODO: force open in new window -->
                 	<iframe src="https://www.youtube.com/embed/yTedwBi5tX8?controls=0/" width="100%"></iframe>
                 </div>
                 <span class="cd-date">August 11, 2016</span>
             </div> 
         </div> 
 
-        <!-- Reception in Texas -->
+        <!-- Newlywed Homecoming Reception in Texas -->
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-location">
                 <img src="img/cd-icon-location.svg" alt="Location">
             </div> 
 
             <div class="cd-timeline-content">
-                <h2>Reception in Texas</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-                <a href="#0" class="cd-read-more">RSVP</a>
+                <h2>Newlywed Homecoming Reception in Texas</h2>
+                <p>We cordially invite you to celebrate with us in Dallas. Please see details below and kindly RSVP through the link. We look forward to seeing you in May!</p>
+                <center>
+	                <p><em>Date:</em><br> May 28, 2017</p>
+	                <p>Time:<br> 5:30pm (arrival)</p>
+	                <p>Location: 
+                        <a href="https://encrypted.google.com/maps/place/Tokyo+One/@32.9539555,-96.8373543,15z/data=!4m5!3m4!1s0x0:0xa10790dc28b024f9!8m2!3d32.9539555!4d-96.8373543">
+    	                <br> Tokyo One
+    	                <br> 4350 Belt Line Rd
+    	                <br> Addison, TX  78001</a>
+                    </p>
+                </center>
+                <a href="https://goo.gl/forms/jkrqXnqUDREI8NHo1" class="cd-read-more">RSVP here!</a>
                 <span class="cd-date">May 28, 2017</span>
             </div> 
         </div> 
 
     </section> <!-- cd-timeline -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
 </body>
 </html>
