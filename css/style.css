@@ -76,8 +76,6 @@ Main components
 
 -------------------------------- */
 header {
-  height: 100px;
-  line-height: 100px;
   text-align: center;
   background: #1F5673;
 }
@@ -85,16 +83,32 @@ header h1 {
   color: white;
   font-size: 36px;
   font-size: 3.0rem;
+  height: 100px;
+  line-height: 100px;
+}
+header h2 {
+  color: white;
+  font-size: 24px;
+  font-size: 1.5rem;
+  height: 48px;
+  line-height: 24px;
 }
 @media only screen and (min-width: 1170px) {
   header {
-    height: 200px;
-    line-height: 200px;
   }
   header h1 {
     font-size: 48px;
     font-size: 4.0rem;
+    height: 100px;
+    line-height: 100px;
   }
+  header h2 {
+  color: white;
+  font-size: 24px;
+  font-size: 1.8rem;
+  height: 80px;
+  line-height: 80px;
+}
 }
 
 div#movie {
@@ -183,6 +197,9 @@ div#movie {
 }
 .cd-timeline-img.cd-bots{
   background: #4B5B25;
+}
+.cd-timeline-img.cd-baby{
+  background: #FBC02;
 }
 
 
