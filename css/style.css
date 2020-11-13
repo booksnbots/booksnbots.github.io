@@ -99,13 +99,13 @@ header h2 {
   header h1 {
     font-size: 48px;
     font-size: 4.0rem;
-    height: 100px;
-    line-height: 100px;
+    height: 120px;
+    line-height: 150px;
   }
   header h2 {
   color: white;
   font-size: 24px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   height: 80px;
   line-height: 80px;
 }
@@ -199,7 +199,7 @@ div#movie {
   background: #4B5B25;
 }
 .cd-timeline-img.cd-baby{
-  background: #FBC02;
+  background: #FBC02D;
 }
 
 
