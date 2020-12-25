@@ -15,14 +15,16 @@ blockquote {
   padding-bottom: 3rem;
   font-style: italic;
 }
-#photo-container {
-  background-color: #480e0a;
-}
 .text-container {
   padding: 4rem 1rem 4rem 1rem;
-  max-height: 1200px;
-  overflow: hidden;
+  max-height: 100vh;
+  position: relative;
   word-wrap: break-word;
+}
+#photo-container {
+  position: relative;
+  background-color: #480e0a;
+  font-size: 0;
 }
 #card-title {
   padding-bottom: 2rem;
@@ -32,15 +34,15 @@ blockquote {
   padding-right: 2rem;
 }
 img {
-  width: 108%;
+  max-height: 100vh;
+  max-width: 100%;
   margin: 0;
   float: right;
-  /*object-fit: cover;*/
 }
 
 @media (max-width: 1000px) {
   #card-container {
-    max-height: auto;
+    max-height: 100vh;
   }
   .one-half.column{
     width: 100%;
@@ -49,14 +51,22 @@ img {
   .column {
     margin: 0;
   }
-  img {
-    height: auto;
+  .text-container {
+    padding: 4rem 1rem 4rem 1rem;
+    overflow: scroll;
+    position: relative;
+    word-wrap: break-word;
   }
 }
 
 @media (max-width: 768px) {
   .one-half.column{
-    width: 60%;
+    width: 100%;
     float: none;
+  }
+  .text-container {
+    overflow: visible;
+    position: relative;
+    word-wrap: break-word;
   }
 }
