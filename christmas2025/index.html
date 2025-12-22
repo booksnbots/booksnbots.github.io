@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas 2025 #booksnbots</title>
+    <meta name="description" content="Merry Christmas from the Wu & Ko family.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Hero Section -->
+        <header class="hero">
+            <img src="img/backdrop.jpeg" alt="Christmas Background" class="hero-image">
+            <div class="hero-content">
+                <h1>Merry Christmas</h1>
+                <p>from the Wu & Ko family</p>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <section class="message">
+                <div class="family-photo-container">
+                    <img src="img/family.jpg" alt="Wu Family" class="family-photo">
+                </div>
+                <h2>2025: What a year!</h2>
+                <div class="text-block">
+                    <p>Baz is constantly investigating how things sound, work, and function, and we hope his first words
+                        ("uh-oh!") will not be indicative of what's to come. Bethel is in her final year of nursery
+                        school and can be found bopping to Golden, watercoloring, and being our sous chef in the
+                        kitchen.</p>
+                    <p>Priscilla led her team's digital transformation, integrating all of the Foundation's grantmaking
+                        operations through Salesforce and was promoted to Senior Program Officer. John also enjoyed a
+                        year of growth, including a promotion to Associate Astronomer and invitations to speak all over
+                        the world. </p>
+                    <p>This year, we also took our first international trip to United Kingdom (London, Bristol, Bath)
+                        traveling by airplane, train, ferry, and double decker buses!</p>
+
+                </div>
+
+                <div class="signature">
+                    <p>Wishing you and your loved ones a joyous holiday season!</p>
+                    <p>Priscilla, John, Bethel, and Basil</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="inner">
+                <p>&copy; 2025 John Wu & Priscilla Ko. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.main-content').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

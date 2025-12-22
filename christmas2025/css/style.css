@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #1a3a3a;
+    /* Deep Forest Green */
+    --accent-color: #d4af37;
+    /* Warm Gold */
+    --text-color: #2c3e50;
+    --bg-color: #fdfbf7;
+    /* Soft Off-White */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+}
+
+#wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    filter: brightness(0.8);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+    opacity: 0.9;
+    animation: fadeInUp 1.2s ease 0.3s forwards;
+    animation-fill-mode: both;
+}
+
+/* Animations and Transitions */
+.main-content {
+    padding: 6rem 10%;
+    max-width: 1200px;
+    margin: -100px auto 0;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.main-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.family-photo-container {
+    margin-bottom: 3rem;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.family-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 1s ease;
+}
+
+.main-content.visible .family-photo {
+    transform: scale(1);
+}
+
+.message h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05em;
+}
+
+.message h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message p {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signature {
+    margin-top: 3rem;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    border-top: 1px solid #eee;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .main-content {
+        padding: 4rem 1.5rem;
+        margin-top: -50px;
+    }
+
+    .message h2 {
+        font-size: 2rem;
+    }
+}
